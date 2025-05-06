@@ -52,7 +52,8 @@ export const HeroSection = () => {
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
             I Spacialize in trsnsforming desings into functional,
-            high-performing web application. Let's discuess your next project
+            high-performing web application. Let&apos;s discuess your next
+            project
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
