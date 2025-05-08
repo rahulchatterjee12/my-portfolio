@@ -22,18 +22,83 @@ export const HeroSection = () => {
         <div className="hero-ring size-[1020px]"></div>
         <div className="hero-ring size-[1220px]"></div>
         {[
-          { size: 800, iconSize: 28, rotation: -72 },
-          { size: 550, iconSize: 12, rotation: 20 },
-          { size: 590, iconSize: 8, rotation: 98 },
-          { size: 430, iconSize: 8, rotation: -14 },
-          { size: 530, iconSize: 10, rotation: 178 },
-          { size: 710, iconSize: 14, rotation: 144 },
-          { size: 440, iconSize: 5, rotation: 79 },
-          { size: 720, iconSize: 3, rotation: 85 },
-          { size: 590, iconSize: 2, rotation: -41 },
-          { size: 650, iconSize: 2, rotation: -5 },
+          {
+            size: 430,
+            iconSize: 8,
+            rotation: -14,
+            spinDuration: "30s",
+            type: "star",
+          },
+          {
+            size: 440,
+            iconSize: 5,
+            rotation: 79,
+            spinDuration: "32s",
+            type: "spark",
+          },
+          {
+            size: 530,
+            iconSize: 10,
+            rotation: 178,
+            spinDuration: "34s",
+            type: "spark",
+          },
+          {
+            size: 550,
+            iconSize: 12,
+            rotation: 20,
+            spinDuration: "36s",
+            type: "star",
+          },
+          {
+            size: 590,
+            iconSize: 8,
+            rotation: 98,
+            spinDuration: "38s",
+            type: "star",
+          },
+          {
+            size: 590,
+            iconSize: 2,
+            rotation: -41,
+            spinDuration: "40s",
+            type: "dot",
+          },
+          {
+            size: 650,
+            iconSize: 2,
+            rotation: -5,
+            spinDuration: "42s",
+            type: "dot",
+          },
+          {
+            size: 710,
+            iconSize: 14,
+            rotation: 144,
+            spinDuration: "44s",
+            type: "spark",
+          },
+          {
+            size: 720,
+            iconSize: 3,
+            rotation: 85,
+            spinDuration: "46s",
+            type: "dot",
+          },
+          {
+            size: 800,
+            iconSize: 28,
+            rotation: -72,
+            spinDuration: "48s",
+            type: "star",
+          },
         ].map((star, index) => (
-          <HeroOrbit key={index} size={star.size} rotation={star.rotation}>
+          <HeroOrbit
+            key={index}
+            size={star.size}
+            rotation={star.rotation}
+            spinDuration={star.spinDuration}
+          >
             <StarIcon className={`text-emerald-500 size-${star.iconSize}`} />
           </HeroOrbit>
         ))}
@@ -42,7 +107,9 @@ export const HeroSection = () => {
         <div className="flex flex-col items-center">
           <Image src={memojiImage} alt="memoji" className="size-[100px]" />
           <div className="bg-gray-950 border-gray-800 px-4 py-1.5 inline-flex items-center mt-3 gap-4 rounded-lg">
-            <div className="bg-green-500 size-2.5 rounded-full"></div>
+            <div className="bg-green-500 size-2.5 rounded-full relative">
+              <div className="absolute inset-0 bg-green-500 rounded-full animate-ping"></div>
+            </div>
             <div className="text-sm font-medium">Avalaval For New Projects</div>
           </div>
         </div>
