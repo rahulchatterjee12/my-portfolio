@@ -16,4 +16,30 @@
     .container {
         @apply lg:max-w-5xl 
     }
+
+    @keyframes move-left {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .move-left {
+        animation: move-left 12s ease-in-out infinite alternate-reverse;
+    }
+
+    @keyframes move-right {
+        0% {
+            transform: translateX(-50%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    .move-right {
+        animation: move-right 12s ease-in-out infinite alternate-reverse;
+    }
 }

@@ -8,7 +8,7 @@ import smileMemoji from "../assets/images/memoji-smile.png";
 import CardHeader from "@/components/CardHeader";
 import ToolboxItems from "@/components/ToolboxItems";
 
-const toolBoxItems = [
+const toolBoxItems1 = [
   {
     title: "React",
     icon: JavaScriptIcon,
@@ -35,6 +35,37 @@ const toolBoxItems = [
   },
   {
     title: "Python",
+    icon: JavaScriptIcon,
+  },
+];
+
+const toolBoxItems2 = [
+  {
+    title: "Python",
+    icon: JavaScriptIcon,
+  },
+  {
+    title: "Node.js",
+    icon: JavaScriptIcon,
+  },
+  {
+    title: "JavaScript",
+    icon: JavaScriptIcon,
+  },
+  {
+    title: "TypeScript",
+    icon: JavaScriptIcon,
+  },
+  {
+    title: "Tailwind CSS",
+    icon: JavaScriptIcon,
+  },
+  {
+    title: "Next.js",
+    icon: JavaScriptIcon,
+  },
+  {
+    title: "React",
     icon: JavaScriptIcon,
   },
 ];
@@ -121,11 +152,15 @@ export const AboutSection = () => {
                 description="Explore the Toolbox."
                 className="px-6 pt-6"
               />
-              <ToolboxItems items={toolBoxItems} className="mt-6" />
               <ToolboxItems
-                items={toolBoxItems}
+                items={toolBoxItems1}
                 className="mt-6"
-                itemWraperClassName="-translate-x-1/2"
+                itemWraperClassName="move-left"
+              />
+              <ToolboxItems
+                items={toolBoxItems2}
+                className="mt-6"
+                itemWraperClassName="move-right"
               />
             </Card>
           </div>

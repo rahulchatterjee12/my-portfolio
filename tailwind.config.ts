@@ -25,8 +25,6 @@ const config: Config = {
         sans: "var(--font-sans)",
         serif: "var(--font-serif)",
       },
-      animation: {},
-      keyframes: {},
     },
   },
   plugins: [],
