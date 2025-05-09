@@ -127,9 +127,9 @@ export function TimelineDemo() {
               interface responsiveness.
             </li>
             <li>
-              Developed a client's portfolio website using Next JS, integrating
-              advanced features to showcase their work effectively and enhance
-              online presence.
+              Developed a client&apos;s portfolio website using Next JS,
+              integrating advanced features to showcase their work effectively
+              and enhance online presence.
             </li>
           </ul>
         </TimeLineCard>
