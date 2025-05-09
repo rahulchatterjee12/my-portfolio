@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Calistoga } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
+import { Footer } from "@/sections/Footer";
+import { NavbarCom } from "@/components/UI/Navbar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,10 +31,13 @@ export default function RootLayout({
         className={twMerge(
           inter.variable,
           calistoga.variable,
-          "bg-gray-900 text-white font-sans antialiased"
+          "bg-gray-900 text-white font-sans"
         )}
       >
-        {children}
+        <NavbarCom>
+          {children}
+          <Footer />
+        </NavbarCom>
       </body>
     </html>
   );

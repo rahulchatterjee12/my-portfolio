@@ -1,48 +1,46 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
-import Image from "next/image";
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpIcon from "@/assets/icons/arrow-up-right.svg";
 import GrainImage from "@/assets/images/grain.jpg";
-import { div } from "framer-motion/client";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
-  },
-  {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
+    company: "Runway Technologies",
     year: "2023",
-    title: "AI Startup Landing Page",
+    title: "Runway Tender & Materials",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Built the frontend from scratch using Next.js" },
+      { title: "Implemented state management with Redux" },
+      {
+        title:
+          "Designed a fully responsive UI with Tailwind CSS and Material UI",
+      },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://runway.org.in",
+    image: "https://i.ibb.co/nsQd26nM/Screenshot-2025-04-21-154340.png",
+  },
+  {
+    company: "Eye Pune",
+    year: "2025",
+    title: "EyePune Portfolio Website",
+    results: [
+      { title: "Created the frontend from scratch using Next.js" },
+      { title: "Enhanced user experience with modern design principles" },
+      { title: "Ensured full responsiveness using Tailwind CSS" },
+    ],
+    link: "https://eyepune.com",
+    image: "https://i.ibb.co/Q7GZPxdr/Screenshot-2025-05-08-161456.png",
+  },
+  {
+    company: "File My Return",
+    year: "2025",
+    title: "ITR Filing Web Application",
+    results: [
+      { title: "Developed the frontend from scratch using Next.js" },
+      { title: "Utilized Redux for efficient state management" },
+      { title: "Designed a fully responsive interface with Tailwind CSS" },
+    ],
+    link: "https://filemyreturn.co.in/",
+    image: "https://i.ibb.co/qY8JkJT2/Screenshot-2025-05-08-160640.png",
   },
 ];
 
@@ -112,10 +110,10 @@ export const ProjectsSection = () => {
                     </a>
                   </div>
                   <div className="relative">
-                    <Image
+                    <img
                       src={project.image}
                       alt={project.title}
-                      className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                      className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-xl"
                     />
                   </div>
                 </div>

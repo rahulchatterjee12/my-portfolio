@@ -27,7 +27,7 @@
     }
 
     .move-left {
-        animation: move-left 12s ease-in-out infinite alternate-reverse;
+        animation: move-left 25s ease-in-out infinite alternate-reverse;
     }
 
     @keyframes move-right {
@@ -40,6 +40,6 @@
     }
 
     .move-right {
-        animation: move-right 12s ease-in-out infinite alternate-reverse;
+        animation: move-right 25s ease-in-out infinite alternate-reverse;
     }
 }
