@@ -1,6 +1,7 @@
 import React from "react";
 import { Timeline } from "./TimeLine";
 import { TimeLineCard } from "./TimelineCard";
+import { AnimatedTooltip } from "./Tooltip";
 
 export function TimelineDemo() {
   const data = [
@@ -10,11 +11,6 @@ export function TimelineDemo() {
         <TimeLineCard>
           <div>
             <p className="mb-2 text-sm font-semibold">Dec 2022 - Present</p>
-            <p className="mb-2 text-sm font-semibold flex items-center gap-2">
-              Technologies: React.js, Next.js, Redux, Material-UI, Tailwind CSS,
-              RESTful API, Figma, Django, MongoDB, Python, Selenium,
-              Django-Rest-Framework, Django Template Language, 360 Dialog API
-            </p>
             <p className="mb-2 text-sm font-semibold">Software Developer</p>
             <p className="mb-2 text-sm font-semibold">Position: Full-time</p>
             <p className="mb-2 text-sm font-semibold">Work Mode: Hybrid</p>
@@ -57,6 +53,61 @@ export function TimelineDemo() {
                 management processes.
               </li>
             </ul>
+            <div className="flex flex-row items-center justify-start mt-5 mb-5 w-full">
+              <AnimatedTooltip
+                items={[
+                  {
+                    id: 1,
+                    name: "Reach.js",
+                    designation: "",
+                    image:
+                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSoW3g9hjXIasgon-kpzz-lD9z4SsalyPbZA&s",
+                  },
+                  {
+                    id: 2,
+                    name: "Next.js",
+                    designation: "",
+                    image:
+                      "https://global.discourse-cdn.com/auth0/optimized/2X/a/ae35edce19e64c53e5d455b22e8a2c82d093d4c9_2_1024x919.png",
+                  },
+                  {
+                    id: 3,
+                    name: "Redux",
+                    designation: "",
+                    image:
+                      "https://miro.medium.com/v2/resize:fit:1000/1*wQ5SsWOSoTFRjlnFYXPOiA.png",
+                  },
+                  {
+                    id: 4,
+                    name: "Figma",
+                    designation: "",
+                    image:
+                      "https://cdn.sanity.io/images/599r6htc/regionalized/5094051dac77593d0f0978bdcbabaf79e5bb855c-1080x1080.png?w=540&h=540&q=75&fit=max&auto=format",
+                  },
+                  {
+                    id: 5,
+                    name: "Django",
+                    designation: "",
+                    image:
+                      "https://w7.pngwing.com/pngs/10/113/png-transparent-django-web-development-web-framework-python-software-framework-django-text-trademark-logo.png",
+                  },
+                  {
+                    id: 6,
+                    name: "MongoDB",
+                    designation: "",
+                    image:
+                      "https://cdn.worldvectorlogo.com/logos/mongodb-icon-2.svg",
+                  },
+                  {
+                    id: 7,
+                    name: "Python",
+                    designation: "",
+                    image:
+                      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1024px-Python.svg.png",
+                  },
+                ]}
+              />
+            </div>
           </div>
         </TimeLineCard>
       ),
@@ -67,8 +118,7 @@ export function TimelineDemo() {
         <TimeLineCard>
           <p className="mb-2 text-sm font-semibold">Aug 2023 - March 2025</p>
           <p className="mb-2 text-sm font-semibold flex items-center gap-2">
-            Technologies: Next.JS, React.JS, Wordpress, Wix, Velo(Wix’s language
-            to customise the web apps)
+            Technologies: Next.JS, React.JS, Wordpress, Wix
           </p>
           <p className="mb-2 text-sm font-semibold">Full-stack Developer</p>
           <p className="mb-2 text-sm font-semibold">Position: Freelancer</p>
@@ -98,21 +148,66 @@ export function TimelineDemo() {
               ensuring efficient website creation and management.
             </li>
           </ul>
+          <div className="flex flex-row items-center justify-start mt-5 mb-5 w-full">
+            <AnimatedTooltip
+              items={[
+                {
+                  id: 1,
+                  name: "Reach.js",
+                  designation: "",
+                  image:
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSoW3g9hjXIasgon-kpzz-lD9z4SsalyPbZA&s",
+                },
+                {
+                  id: 2,
+                  name: "Next.js",
+                  designation: "",
+                  image:
+                    "https://global.discourse-cdn.com/auth0/optimized/2X/a/ae35edce19e64c53e5d455b22e8a2c82d093d4c9_2_1024x919.png",
+                },
+                {
+                  id: 3,
+                  name: "Redux",
+                  designation: "",
+                  image:
+                    "https://miro.medium.com/v2/resize:fit:1000/1*wQ5SsWOSoTFRjlnFYXPOiA.png",
+                },
+                {
+                  id: 4,
+                  name: "Figma",
+                  designation: "",
+                  image:
+                    "https://cdn.sanity.io/images/599r6htc/regionalized/5094051dac77593d0f0978bdcbabaf79e5bb855c-1080x1080.png?w=540&h=540&q=75&fit=max&auto=format",
+                },
+                {
+                  id: 5,
+                  name: "Wix",
+                  designation: "",
+                  image:
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFfh0x-QRbuLf6_iZoZxN61dcCANaDe7GIpw&s",
+                },
+                {
+                  id: 6,
+                  name: "Wordpress",
+                  designation: "",
+                  image:
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzBAeNRyaVHnyq6zUmQeNset_p6u5o511LIw&s",
+                },
+              ]}
+            />
+          </div>
         </TimeLineCard>
       ),
     },
     {
-      title: "React Developer",
+      title: "Ebug Technology",
       content: (
         <TimeLineCard>
           <p className="mb-2 text-sm font-semibold">Sep 2023 - Oct 2023</p>
           <p className="mb-2 text-sm font-semibold flex items-center gap-2">
-            Technologies: React.js, Matirial UI, Taildwind CSS, HTML, JS, CSS,
-            PHP, Node.js
+            Technologies: React.js, PHP, Node.js
           </p>
-          <p className="mb-2 text-sm font-semibold">
-            Role: Component Developer
-          </p>
+          <p className="mb-2 text-sm font-semibold">Role: React Developer</p>
           <p className="mb-2 text-sm font-semibold">Position: Internship</p>
           <p className="mb-2 text-sm font-semibold">Work Mode: Remote</p>
           <ul className="list-disc pl-5 text-sm">
@@ -132,6 +227,32 @@ export function TimelineDemo() {
               and enhance online presence.
             </li>
           </ul>
+          <div className="flex flex-row items-center justify-start mt-5 mb-5 w-full">
+            <AnimatedTooltip
+              items={[
+                {
+                  id: 1,
+                  name: "Reach.js",
+                  designation: "",
+                  image:
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSoW3g9hjXIasgon-kpzz-lD9z4SsalyPbZA&s",
+                },
+                {
+                  id: 2,
+                  name: "Node.js",
+                  designation: "",
+                  image:
+                    "https://www.hashtechy.com/assets/icon/hire-developers/hire-js-developer/node_logo.svg",
+                },
+                {
+                  id: 3,
+                  name: "PHP",
+                  designation: "",
+                  image: "https://www.cdnlogo.com/logos/p/79/php.svg",
+                },
+              ]}
+            />
+          </div>
         </TimeLineCard>
       ),
     },

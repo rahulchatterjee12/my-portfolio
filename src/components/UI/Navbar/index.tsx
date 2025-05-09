@@ -68,14 +68,7 @@ export function NavbarCom({ children }: { children: React.ReactNode }) {
                 variant="primary"
                 className="w-full"
               >
-                Login
-              </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Book a call
+                Contact
               </NavbarButton>
             </div>
           </MobileNavMenu>

@@ -63,9 +63,4 @@ export const products = [
     link: "https://www.aecuslegal.com/",
     thumbnail: "https://i.ibb.co/9m2DXr39/Screenshot-2025-05-08-161247.png",
   },
-  {
-    title: "Eye Pune",
-    link: "https://www.eyepune.com/",
-    thumbnail: "https://i.ibb.co/Q7GZPxdr/Screenshot-2025-05-08-161456.png",
-  },
 ];
