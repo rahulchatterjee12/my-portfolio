@@ -10,47 +10,63 @@ export function TimelineDemo() {
       content: (
         <TimeLineCard>
           <div>
-            <p className="mb-2 text-sm font-semibold">Dec 2022 - Present</p>
-            <p className="mb-2 text-sm font-semibold">Software Developer</p>
-            <p className="mb-2 text-sm font-semibold">Position: Full-time</p>
-            <p className="mb-2 text-sm font-semibold">Work Mode: Hybrid</p>
-
-            <ul className="list-disc pl-5 text-sm">
-              <li>
-                Led the creation of responsive web applications with React,
-                Next.js, Material UI, and Tailwind CSS, implementing Redux for
-                efficient state management and seamlessly integrating RESTful
-                APIs to enhance functionality and deliver polished user
-                experiences.
+            <div className="mb-6">
+              <p className="text-lg font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text">
+                Software Developer
+              </p>
+              <p className="text-sm text-gray-500">Dec 2022 - Present</p>
+              <div className="flex items-center mt-2 space-x-4">
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">
+                  Full-time
+                </span>
+                <span className="px-3 py-1 bg-green-100 text-green-600 text-xs font-medium rounded-full">
+                  Hybrid
+                </span>
+              </div>
+            </div>
+            <ul className="space-y-4 text-slate-300">
+              <li className="p-4 bg-white bg-opacity-30 backdrop-blur-lg border border-gray-200 rounded-lg hover:bg-opacity-40 transition">
+                <span className="font-semibold text-emerald-300">
+                  Project Leadership:
+                </span>{" "}
+                Led the creation of responsive web applications using React,
+                Next.js, Material UI, and Tailwind CSS, implementing Redux and
+                integrating RESTful APIs for enhanced functionality.
               </li>
-              <li>
-                Designed user-friendly UI/UX interfaces for web applications
-                using Figma, focusing on intuitive navigation and visually
-                appealing layouts to optimize user experience.
+              <li className="p-4 bg-white bg-opacity-30 backdrop-blur-lg border border-gray-200 rounded-lg hover:bg-opacity-40 transition">
+                <span className="font-semibold text-emerald-300">
+                  UI/UX Design:
+                </span>{" "}
+                Designed user-friendly interfaces using Figma, focusing on
+                intuitive navigation and visually appealing layouts.
               </li>
-              <li>
-                Conducted web scraping operations to extract government tender
-                details utilizing Selenium, demonstrating proficiency in data
-                extraction techniques and automation processes.
+              <li className="p-4 bg-white bg-opacity-30 backdrop-blur-lg border border-gray-200 rounded-lg hover:bg-opacity-40 transition">
+                <span className="font-semibold text-emerald-300">
+                  Data Extraction:
+                </span>{" "}
+                Conducted web scraping operations using Selenium, extracting
+                valuable data from government tenders.
               </li>
-              <li>
-                Executed data processing tasks utilizing PyMongo and Pandas in
-                Python, facilitating efficient manipulation and analysis of
-                large datasets to extract valuable insights and support
-                decision-making processes.
+              <li className="p-4 bg-white bg-opacity-30 backdrop-blur-lg border border-gray-200 rounded-lg hover:bg-opacity-40 transition">
+                <span className="font-semibold text-emerald-300">
+                  Data Analysis:
+                </span>{" "}
+                Processed data using PyMongo and Pandas, enabling comprehensive
+                data analysis to support strategic decision-making.
               </li>
-              <li>
-                Spearheaded the integration of a WhatsApp chatbot utilizing
-                Python and 360 Dialog API (WhatsApp API service). Innovatively
-                developed and implemented a new loan inquiry section within the
-                chatbot, enhancing user engagement and functionality.
+              <li className="p-4 bg-white bg-opacity-30 backdrop-blur-lg border border-gray-200 rounded-lg hover:bg-opacity-40 transition">
+                <span className="font-semibold text-emerald-300">
+                  Chatbot Development:
+                </span>{" "}
+                Developed a WhatsApp chatbot using Python and 360 Dialog API,
+                implementing a loan inquiry feature to increase engagement.
               </li>
-              <li>
-                Collaborated on the enhancement of an existing website utilizing
-                Django framework and Django template language. Seamlessly
-                integrated a feature enabling the download of user data from the
-                admin portal using Pandas and PyMongo, optimizing data
-                management processes.
+              <li className="p-4 bg-white bg-opacity-30 backdrop-blur-lg border border-gray-200 rounded-lg hover:bg-opacity-40 transition">
+                <span className="font-semibold text-emerald-300">
+                  Backend Integration:
+                </span>{" "}
+                Enhanced a Django-based website by integrating a data download
+                feature using Pandas and PyMongo.
               </li>
             </ul>
             <div className="flex flex-row items-center justify-start mt-5 mb-5 w-full">
@@ -116,36 +132,63 @@ export function TimelineDemo() {
       title: "EyePune",
       content: (
         <TimeLineCard>
-          <p className="mb-2 text-sm font-semibold">Aug 2023 - March 2025</p>
-          <p className="mb-2 text-sm font-semibold flex items-center gap-2">
-            Technologies: Next.JS, React.JS, Wordpress, Wix
-          </p>
-          <p className="mb-2 text-sm font-semibold">Full-stack Developer</p>
-          <p className="mb-2 text-sm font-semibold">Position: Freelancer</p>
-          <p className="mb-2 text-sm font-semibold">Work Mode: Remote</p>
-          <ul className="list-disc pl-5 text-sm">
-            <li>
-              Developed and optimized responsive web applications using React,
-              Next.js, Material UI, and Tailwind CSS. Utilized Redux for
-              streamlined state management and integrated RESTful APIs to
-              enhance application functionality, ensuring a seamless and
-              engaging user experience.
+          <div className="mb-6">
+            <p className="text-lg font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text">
+              Frontend Developer
+            </p>
+            <p className="text-sm text-gray-500">Dec 2022 - Present</p>
+            <div className="flex items-center mt-2 space-x-4">
+              <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">
+                Full-time
+              </span>
+              <span className="px-3 py-1 bg-green-100 text-green-600 text-xs font-medium rounded-full">
+                Hybrid
+              </span>
+            </div>
+          </div>
+          <ul className="space-y-4 text-slate-300">
+            <li className="p-4 bg-white bg-opacity-30 backdrop-blur-lg border border-gray-200 rounded-lg hover:bg-opacity-40 transition">
+              <span className="font-semibold text-emerald-300">
+                Project Leadership:
+              </span>
+              Led the creation of responsive web applications using React,
+              Next.js, Material UI, and Tailwind CSS, implementing Redux and
+              integrating RESTful APIs for enhanced functionality.
             </li>
-            <li>
-              Additionally, I have enhanced and redesigned WordPress websites to
-              align with client specifications, improving both aesthetics and
-              functionality to deliver a seamless user experience.
+            <li className="p-4 bg-white bg-opacity-30 backdrop-blur-lg border border-gray-200 rounded-lg hover:bg-opacity-40 transition">
+              <span className="font-semibold text-emerald-300">
+                UI/UX Design:
+              </span>{" "}
+              Designed user-friendly interfaces using Figma, focusing on
+              intuitive navigation and visually appealing layouts.
             </li>
-            <li>
-              Streamlined performance of the official website using Wix
-              platform, enhancing loading times and functionality. Utilized Wix
-              Code Editor to implement custom logic for dynamic banner
-              shuffling, improving user engagement.
+            <li className="p-4 bg-white bg-opacity-30 backdrop-blur-lg border border-gray-200 rounded-lg hover:bg-opacity-40 transition">
+              <span className="font-semibold text-emerald-300">
+                Data Extraction:
+              </span>{" "}
+              Conducted web scraping operations using Selenium, extracting
+              valuable data from government tenders.
             </li>
-            <li>
-              Conducted training sessions for website designers, equipping them
-              with the skills to proficiently utilize Wix and Wix Studio,
-              ensuring efficient website creation and management.
+            <li className="p-4 bg-white bg-opacity-30 backdrop-blur-lg border border-gray-200 rounded-lg hover:bg-opacity-40 transition">
+              <span className="font-semibold text-emerald-300">
+                Data Analysis:
+              </span>{" "}
+              Processed data using PyMongo and Pandas, enabling comprehensive
+              data analysis to support strategic decision-making.
+            </li>
+            <li className="p-4 bg-white bg-opacity-30 backdrop-blur-lg border border-gray-200 rounded-lg hover:bg-opacity-40 transition">
+              <span className="font-semibold text-emerald-300">
+                Chatbot Development:
+              </span>{" "}
+              Developed a WhatsApp chatbot using Python and 360 Dialog API,
+              implementing a loan inquiry feature to increase engagement.
+            </li>
+            <li className="p-4 bg-white bg-opacity-30 backdrop-blur-lg border border-gray-200 rounded-lg hover:bg-opacity-40 transition">
+              <span className="font-semibold text-emerald-300">
+                Backend Integration:
+              </span>{" "}
+              Enhanced a Django-based website by integrating a data download
+              feature using Pandas and PyMongo.
             </li>
           </ul>
           <div className="flex flex-row items-center justify-start mt-5 mb-5 w-full">
@@ -203,30 +246,47 @@ export function TimelineDemo() {
       title: "Ebug Technology",
       content: (
         <TimeLineCard>
-          <p className="mb-2 text-sm font-semibold">Sep 2023 - Oct 2023</p>
-          <p className="mb-2 text-sm font-semibold flex items-center gap-2">
-            Technologies: React.js, PHP, Node.js
-          </p>
-          <p className="mb-2 text-sm font-semibold">Role: React Developer</p>
-          <p className="mb-2 text-sm font-semibold">Position: Internship</p>
-          <p className="mb-2 text-sm font-semibold">Work Mode: Remote</p>
-          <ul className="list-disc pl-5 text-sm">
-            <li>
-              Orchestrated creation of responsive designs in React JS, adapting
-              Figma, PSD, and client imagery. Customized website appearances to
-              align with client preferences.
+          <div className="mb-6">
+            <p className="text-lg font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text">
+              React Developer
+            </p>
+            <p className="text-sm text-gray-500">Sep 2023 - Oct 2023</p>
+            <div className="flex items-center mt-2 space-x-4">
+              <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">
+                Internship
+              </span>
+              <span className="px-3 py-1 bg-purple-100 text-purple-600 text-xs font-medium rounded-full">
+                Remote
+              </span>
+            </div>
+          </div>
+          <ul className="space-y-4 text-slate-300">
+            <li className="p-4 bg-white bg-opacity-30 backdrop-blur-lg border border-gray-200 rounded-lg hover:bg-opacity-40 transition">
+              <span className="font-semibold text-emerald-300">
+                Responsive Design:
+              </span>{" "}
+              Orchestrated the creation of responsive designs in React.js,
+              adapting Figma, PSD, and client imagery to customize website
+              appearances and align with client preferences.
             </li>
-            <li>
+            <li className="p-4 bg-white bg-opacity-30 backdrop-blur-lg border border-gray-200 rounded-lg hover:bg-opacity-40 transition">
+              <span className="font-semibold text-emerald-300">
+                Dynamic Web Development:
+              </span>{" "}
               Converted non-responsive websites into dynamic web applications
-              using React JS, HTML, CSS, and JavaScript, optimizing user
+              using React.js, HTML, CSS, and JavaScript, optimizing user
               interface responsiveness.
             </li>
-            <li>
-              Developed a client&apos;s portfolio website using Next JS,
-              integrating advanced features to showcase their work effectively
-              and enhance online presence.
+            <li className="p-4 bg-white bg-opacity-30 backdrop-blur-lg border border-gray-200 rounded-lg hover:bg-opacity-40 transition">
+              <span className="font-semibold text-emerald-300">
+                Portfolio Development:
+              </span>{" "}
+              Developed a client’s portfolio website using Next.js, integrating
+              advanced features to showcase their work and enhance their online
+              presence.
             </li>
           </ul>
+
           <div className="flex flex-row items-center justify-start mt-5 mb-5 w-full">
             <AnimatedTooltip
               items={[
