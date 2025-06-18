@@ -18,10 +18,6 @@ export function NavbarCom({ children }: { children: React.ReactNode }) {
       name: "Home",
       link: "/",
     },
-    {
-      name: "Projects",
-      link: "/projects",
-    },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
