@@ -1,5 +1,6 @@
 import { HeroParallaxDemo } from "@/components/UI/Hero";
-import Skills from "@/components/UI/Skils";
+import { Skills } from "@/components/UI/Skils";
+import { SkillsHeader } from "@/components/UI/Skils/Header";
 import { TimelineDemo } from "@/components/UI/Timeline";
 import { AboutSection } from "@/sections/About";
 import { ContactSection } from "@/sections/Contact";
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroParallaxDemo />
       <ProjectsSection />
       <TimelineDemo />
+      <SkillsHeader />
       <Skills />
       <AboutSection />
       <ContactSection />

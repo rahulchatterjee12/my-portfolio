@@ -43,3 +43,29 @@
         animation: move-right 25s ease-in-out infinite alternate-reverse;
     }
 }
+
+
+@layer utilities {
+    @keyframes move {
+        0% {
+            transform: translateX(-200px);
+        }
+        100% {
+            transform: translateX(200px);
+        }
+    }
+
+    .animate-move {
+        animation: move 5s linear infinite;
+    }
+}
+
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+ 
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
