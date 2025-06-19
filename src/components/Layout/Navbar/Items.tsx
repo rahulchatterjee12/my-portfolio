@@ -50,35 +50,54 @@ interface MobileNavMenuProps {
 
 export const Navbar = ({ children, className }: NavbarProps) => {
   const ref = useRef<HTMLDivElement>(null);
-  const { scrollY } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
+  const { scrollY } = useScroll();
+
   const [visible, setVisible] = useState<boolean>(false);
+  const lastScrollY = useRef<number>(0);
+  const [showNavbar, setShowNavbar] = useState<boolean>(true);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    if (latest > 100) {
-      setVisible(true);
+    // Set visibility flag based on scroll position
+    setVisible(latest > 100);
+
+    // Hide/show logic
+    if (latest > lastScrollY.current && latest > 1000) {
+      setShowNavbar(false);
     } else {
-      setVisible(false);
+      setShowNavbar(true);
     }
+
+    lastScrollY.current = latest;
   });
 
+  const variants = {
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <motion.div
-      ref={ref}
-      // IMPORTANT: Change this to class of `fixed` if you want the navbar to be fixed
-      className={cn("sticky inset-x-0 top-6 z-40 w-full", className)}
-    >
-      {React.Children.map(children, (child) =>
-        React.isValidElement(child)
-          ? React.cloneElement(
-              child as React.ReactElement<{ visible?: boolean }>,
-              { visible }
-            )
-          : child
+    <AnimatePresence>
+      {showNavbar && (
+        <motion.div
+          ref={ref}
+          className={cn("sticky top-0 z-40 w-full", className)}
+          variants={variants}
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
+          transition={{ duration: 0.4, ease: "easeOut" }}
+        >
+          {React.Children.map(children, (child) =>
+            React.isValidElement(child)
+              ? React.cloneElement(
+                  child as React.ReactElement<{ visible?: boolean }>,
+                  { visible }
+                )
+              : child
+          )}
+        </motion.div>
       )}
-    </motion.div>
+    </AnimatePresence>
   );
 };
 
