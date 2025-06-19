@@ -28,8 +28,8 @@ export default function ContactMe() {
           transition={{ delay: 0.2 }}
           className="text-gray-400 text-lg mb-10"
         >
-          I'm open to collaboration, freelance opportunities, or just a friendly
-          hello.
+          I&apos;m open to collaboration, freelance opportunities, or just a
+          friendly hello.
         </motion.p>
 
         <AnimatePresence>
