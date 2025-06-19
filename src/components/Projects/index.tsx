@@ -4,6 +4,7 @@ import React from "react";
 import { TracingBeam } from "@/components/Projects/Tracing-beam";
 import { motion, AnimatePresence } from "framer-motion";
 import { SectionHeader } from "../common/SectionHeader";
+import Image from "next/image";
 
 export function Projects() {
   return (
@@ -54,7 +55,6 @@ export function Projects() {
                   {item.title}
                 </motion.h3>
 
-                {/* Image */}
                 {item.image && (
                   <motion.div
                     className="overflow-hidden rounded-xl mb-5 border border-neutral-800"
@@ -67,10 +67,13 @@ export function Projects() {
                     }}
                     whileHover={{ scale: 1.02 }}
                   >
-                    <motion.img
+                    <Image
                       src={item.image}
-                      alt={`${item.title} screenshot`}
+                      alt={`${item.title}`}
+                      width={800}
+                      height={450}
                       className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                      unoptimized
                     />
                   </motion.div>
                 )}
