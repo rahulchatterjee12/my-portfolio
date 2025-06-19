@@ -156,9 +156,10 @@ const projectsData = [
     title: "Runway",
     description: (
       <>
-        A full-stack music streaming platform built with Next.js and Django.
-        Features include user authentication, playlists, favorites, recent
-        plays, and a responsive audio player.
+        I built the frontend from the ground up using Next.js, incorporating
+        efficient state management with Redux. The user interface was designed
+        to be fully responsive, utilizing both Tailwind CSS and Material UI to
+        ensure a seamless experience across all devices.
       </>
     ),
     badge: "Full Stack",
@@ -170,7 +171,7 @@ const projectsData = [
       "Redux",
       "Material UI",
     ],
-    image: "",
+    image: "/assets/projects/1.png",
     github: "",
     live: "https://runway.org.in",
   },
@@ -178,9 +179,10 @@ const projectsData = [
     title: "File My Return",
     description: (
       <>
-        A simple platform that allows users to buy and manage group
-        subscriptions for platforms like Netflix, YouTube Premium, and Hotstar
-        at discounted rates.
+        I developed the frontend from scratch using Next.js, implemented robust
+        state management with Redux, and designed a fully responsive user
+        interface by leveraging Tailwind CSS alongside Material UI for a modern
+        and consistent design.
       </>
     ),
     badge: "Frontend",
@@ -191,7 +193,7 @@ const projectsData = [
       "Redux",
       "TypeScript",
     ],
-    image: "",
+    image: "/assets/projects/2.png",
     github: "",
     live: "https://filemyreturn.co.in/",
   },
@@ -199,9 +201,10 @@ const projectsData = [
     title: "Runway Supplier",
     description: (
       <>
-        A simple platform that allows users to buy and manage group
-        subscriptions for platforms like Netflix, YouTube Premium, and Hotstar
-        at discounted rates.
+        I developed the frontend from scratch using Next.js, leveraging Redux
+        for efficient state management. The interface was designed to be fully
+        responsive, using Tailwind CSS to ensure a seamless user experience
+        across all devices.
       </>
     ),
     badge: "Full Stack",
@@ -211,7 +214,7 @@ const projectsData = [
       "Tailwind CSS",
       "Django-Rest-Framework",
     ],
-    image: "",
+    image: "/assets/projects/3.png",
     github: "",
     live: "https://supplier.runway.org.in/",
   },
@@ -219,13 +222,15 @@ const projectsData = [
     title: "Lalithya",
     description: (
       <>
-        A web-based SaaS platform that helps users find relevant tenders using
-        advanced keyword matching, filters, and alerting mechanisms.
+        Developed a fully functional e-commerce website for Lalitay, a women’s
+        traditional clothing brand, using Wix Studio with responsive design,
+        product catalogs, category filters, and a secure checkout for an
+        enhanced user experience.
       </>
     ),
     badge: "Wix e-commerce",
     techStack: ["Wix", "Velo"],
-    image: "",
+    image: "/assets/projects/4.png",
     github: "",
     live: "https://lalithya.com",
   },
@@ -233,14 +238,17 @@ const projectsData = [
     title: "Aecus Legal",
     description: (
       <>
-        A simple platform that allows users to buy and manage group
-        subscriptions for platforms like Netflix, YouTube Premium, and Hotstar
-        at discounted rates.
+        Designed and developed a professional, responsive website for Aecus
+        Legal, a legal consultancy firm, using the Wix platform. The site
+        features interactive contact forms, client testimonials, detailed
+        service descriptions, and pricing plans to build trust and drive client
+        inquiries. SEO optimization and streamlined navigation were implemented
+        to enhance discoverability and user engagement.
       </>
     ),
     badge: "Wix Portfolio",
     techStack: ["Wix", "Velo"],
-    image: "",
+    image: "/assets/projects/5.png",
     github: "",
     live: "https://www.aecuslegal.com/",
   },
@@ -248,14 +256,16 @@ const projectsData = [
     title: "Eye Pune",
     description: (
       <>
-        A simple platform that allows users to buy and manage group
-        subscriptions for platforms like Netflix, YouTube Premium, and Hotstar
-        at discounted rates.
+        Designed and developed a professional, responsive business platform
+        website offering digital marketing and web development services using
+        Wix, featuring interactive contact forms, client testimonials, pricing
+        plans, and SEO-optimized navigation to boost lead generation and user
+        engagement.
       </>
     ),
     badge: "Wix Portfolio",
     techStack: ["Wix", "Velo"],
-    image: "",
+    image: "/assets/projects/6.png",
     github: "",
     live: "https://www.eyepune.com/",
   },
