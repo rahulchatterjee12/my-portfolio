@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Calistoga } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
-import { Footer } from "@/sections/Footer";
-import { NavbarCom } from "@/components/UI/Navbar";
+import { Footer } from "@/components/Layout/Footer";
+import { NavbarCom } from "@/components/Layout/Navbar";
 
 const inter = Inter({
   subsets: ["latin"],

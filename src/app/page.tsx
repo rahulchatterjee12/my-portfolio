@@ -1,20 +1,17 @@
-import { HeroParallaxDemo } from "@/components/UI/Hero";
-import { Skills } from "@/components/UI/Skils";
-import { SkillsHeader } from "@/components/UI/Skils/Header";
-import { TimelineDemo } from "@/components/UI/Timeline";
-import { AboutSection } from "@/sections/About";
-import { ContactSection } from "@/sections/Contact";
-import { ProjectsSection } from "@/sections/Projects";
+import { Hero } from "@/components/Hero";
+import { Skills } from "@/components/Skils";
+import { SectionHeader } from "@/components/common/SectionHeader";
+import { Journey } from "@/components/Journey";
+import { ContactSection } from "@/components/Contact";
+import { Projects } from "@/components/Projects";
 
 export default function Home() {
   return (
     <>
-      <HeroParallaxDemo />
-      <ProjectsSection />
-      <TimelineDemo />
-      <SkillsHeader />
+      <Hero />
+      <Journey />
+      <Projects />
       <Skills />
-      <AboutSection />
       <ContactSection />
     </>
   );
