@@ -34,15 +34,6 @@ export default function Footer() {
               rc5292684@gmail.com
             </a>
           </p>
-          <p className="text-sm text-gray-400">
-            📞{" "}
-            <a
-              href="tel:9564377910"
-              className="hover:text-indigo-400 transition-colors"
-            >
-              9564377910
-            </a>
-          </p>
         </motion.div>
 
         {/* Social Links */}
