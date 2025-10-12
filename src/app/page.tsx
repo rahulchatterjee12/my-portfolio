@@ -4,6 +4,7 @@ import { SectionHeader } from "@/components/common/SectionHeader";
 import { Journey } from "@/components/Journey";
 import ContactMe from "@/components/Contact";
 import { Projects } from "@/components/Projects";
+import ChatBotWidget from "@/components/common/ChatBot";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Projects />
       <Skills />
       <ContactMe />
+      <ChatBotWidget />
     </>
   );
 }
