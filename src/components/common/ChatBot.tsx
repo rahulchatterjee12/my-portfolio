@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import ChatIcon from "@mui/icons-material/Chat";
 import CloseIcon from "@mui/icons-material/Close";
 import SendIcon from "@mui/icons-material/Send";
+import ReactMarkdown from "react-markdown";
 
 type Message = {
   id: number;
@@ -134,7 +135,9 @@ export default function ChatBotWidget() {
                     <p className="font-semibold text-sm mb-1 opacity-80">
                       {msg.role === "user" ? "You" : "Rahul"}
                     </p>
-                    <p className="text-sm leading-relaxed">{msg.content}</p>
+                    <p className="text-sm leading-relaxed">
+                      <ReactMarkdown>{msg.content}</ReactMarkdown>
+                    </p>
                   </div>
                 </motion.div>
               ))}
