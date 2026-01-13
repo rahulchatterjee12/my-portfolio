@@ -19,7 +19,7 @@ export default function HeroText() {
             Hi, I&apos;m <span className="text-blue-500">Rahul Chatterjee</span>
           </h1>
           <h2 className="text-xl md:text-2xl text-gray-400 mb-6">
-            A Professional Software Developer with 2+ Years of Experience
+            A Professional Software Developer with 3+ Years of Experience
           </h2>
           <p className="text-gray-300 mb-8">
             Specialized in building modern web applications using React,
